@@ -1,3 +1,3 @@
 <x-layout>
-    Hello, World !
+    <livewire:post-list>
 </x-layout>
