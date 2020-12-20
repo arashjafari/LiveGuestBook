@@ -4,4 +4,6 @@
     @endforeach
 
     {{ $posts->links() }}
+
+    <livewire:post-add>
 </div>
