@@ -30,6 +30,7 @@ class PostAdd extends Component
         Post::create($this->data);
 
         $this->clearForm();
+        $this->emit('addedPost');
 
         session()->flash('message', 'Your message has been successfully sent.');
     }

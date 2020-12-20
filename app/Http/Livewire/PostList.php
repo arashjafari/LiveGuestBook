@@ -9,6 +9,8 @@ use Livewire\WithPagination;
 class PostList extends Component
 { 
     use WithPagination;
+    
+    protected $listeners = [ 'addedPost' => 'render' ];
 
     public function render()
     {
